@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Картинки</title>
+  <style>
+   .cs1  {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .cs1 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs1 img:hover {
+    transform: scale(1.2); 
+   }
+   .cs2  {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .cs2 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs2 img:hover {
+    transform: scale(0.8); 
+   }
+   .cs3  {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .cs3 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs3 img:hover {
+    transform: rotate(30deg);
+   }
+   .cs4  {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .cs4 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs4 img:hover {
+    transform: rotate(-30deg);
+   }
+   .cs5  {
+    display: inline-block; 
+    overflow: hidden;
+    background: #000;  
+   }
+   .cs5 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs5 img:hover {
+    opacity: 0.6;
+   }
+   .cs6  {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .cs6 img {
+    transition: 0s;
+    display: block; 
+   }
+   .cs6 img:hover {
+   border: 7px solid #000;
+   width: 658px;
+   height: 490px;
+   }
+   .cs7  {
+  display:inline-block;
+  position:relative; 
+   }
+   .cs7 img {
+    transition: 1s;
+    display: block; 
+   }
+   .cs7 .text{
+   opacity:0;
+   position:absolute;
+   bottom: 50%;
+   left: 25%;
+   max-width: 50%;
+   transition: 0.5s;
+   font-size:22px;
+   background-color:rgba(0, 0, 0, 0.5);
+   padding:10px 5px;
+   color:#fff;
+   }
+   .cs7:hover .text {
+    opacity:1;
+   }
+  </style>
+</head>
+
+<body>
+
+<div class="cs1"><img src="БАЗА.jpg"  class="cs1"/></div>
+<div class="cs2"><img src="БАЗА.jpg"  class="cs2"/></div>
+<div class="cs3"><img src="БАЗА.jpg"  class="cs3"/></div>
+<div class="cs4"><img src="БАЗА.jpg"  class="cs4"/></div>
+<div class="cs5"><img src="БАЗА.jpg"  class="cs5"/></div>
+<div class="cs6"><img src="БАЗА.jpg"  class="cs6"/></div>
+<div class="cs7">
+<img src="БАЗА.jpg"  class="cs7"/>
+<div class = "text">Базар как вода - чем лучше фильтруешь, тем целее будешь</div>
+</div>
+</body>
+</html>

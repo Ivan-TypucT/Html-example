@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>List Example</title>
+  <h1>List Example</h1>
+	<style>
+	ol {
+   counter-reset: li;
+	   }
+	ul {
+   counter-reset: li;
+	   }
+	li
+{
+counter-increment: li;
+}
+        li:before {
+   content: counters(li, ".");
+		 }
+	</style>
+ </head>
+ <body>
+
+  <ol type="1"> 
+    <li>List item  </li>
+
+    <ol type="A">
+	<li> Nested item </li>
+	<li> Nested item </li>
+    </ol>
+    <li>List item </li>
+
+    <ol type = "i">
+	<li> Nested item </li>
+	<li>Nested item</li> 
+
+		<ul type = "square">
+			<li> Nested item </li>
+			<li>Nested item </li>
+
+			<ul type = "circle">
+				<li> Nested item </li>
+				<li> Nested item </li>
+			</ul>
+			</li>
+			<li> Nested item </li>
+    		</ul>
+	</li>
+	<li> Nested item </li>
+    </ol>
+    </li>
+    <li>Nested item </li>
+
+	<ul type = "disc">
+	<li>Item </li>
+	<li>Item </li>
+	<li>Item </li>
+	</ul>
+  </ol>
+ </body>
+</html>
